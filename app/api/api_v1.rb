@@ -15,7 +15,7 @@ class API_v1 < Grape::API
     requires :token, type: String, desc: 'Your name.'
   end
   put :auth do
-    device = Device.create!(token: params[:token])
+    device = Device.find_or_create_by_token!(params[:token])
     { :device => device.id }
   end
   resource :system do
