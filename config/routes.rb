@@ -1,4 +1,8 @@
 Myhouse::Application.routes.draw do
+  get "home/index"
+
+  get "home/notify"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -57,4 +61,8 @@ Myhouse::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   mount API => '/'
+
+  root to: 'home#index'
+
+  post 'notify', to: 'home#notify', as: :notify
 end

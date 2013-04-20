@@ -12,12 +12,26 @@ class API_v1 < Grape::API
   end
 
   params do
-    requires :token, type: String, desc: 'Your name.'
+    requires :token, type: String, desc: 'Your token.'
   end
   put :auth do
     device = Device.find_or_create_by_token!(params[:token])
-    { :device => device.id }
+    if device
+      { status: 'success' }
+    else
+      { status: 'failure' }
+    end    
   end
+
+  params do
+    requires :token, type: String, desc: 'Device token.'
+    requires :values, type: Hash, :desc => 'Values.'
+  end
+  post :update do
+    authenticate!
+    params.as_json
+  end
+
   resource :system do
     desc 'Returns pong.'
     get :ping do
