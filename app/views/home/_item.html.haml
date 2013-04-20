@@ -1,0 +1,5 @@
+%tr
+  %td
+    .item= "#{notification.id}. #{notification.body}"
+    %small.time
+      = Russian::strftime(notification.created_at)
