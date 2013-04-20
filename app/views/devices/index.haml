@@ -1,0 +1,11 @@
+%h2%Р2 Ecnhjqcndf
+ Устройства
+
+%table.table.table-hover  
+  %tr
+    %th APID
+    %th Зарегистрирован
+  - @devices.each do |device|
+    %tr
+      %td= device.token
+      %td= Russian::strftime(device.created_at, "%d %B, %Y")
