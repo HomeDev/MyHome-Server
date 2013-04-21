@@ -15,6 +15,8 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
+gem 'chosen-sass-bootstrap-rails'
+
 gem 'haml-rails'
 
 # Gems used only for assets and not required

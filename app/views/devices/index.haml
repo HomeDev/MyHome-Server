@@ -3,8 +3,10 @@
 %table.table.table-hover  
   %tr
     %th APID
+    %th Адрес
     %th Зарегистрирован
   - @devices.each do |device|
     %tr
       %td= device.token
+      %td= device.address.address
       %td= Russian::strftime(device.created_at, "%d %B, %Y")

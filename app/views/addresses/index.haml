@@ -1,0 +1,14 @@
+%h2 Оповещение
+
+= form_for :notification, url: notify_address_path, method: 'post', html: {class: 'form-horizontal'} do |f|
+  .control-group
+    %label.control-label Текст оповещения
+    .controls
+      = f.text_area :body, rows: 3, class: 'input-xxlarge'
+  .control-group
+    %label.control-label Адреса
+    .controls
+      = f.select :addresses, Address.all.map{|a| [a.address, a.id]}, {include_blank: true}, {multiple: 'multiple', data: {placeholder: 'Выберите адреса'}}
+  .control-group
+    .controls
+      = f.submit 'Послать оповещения', class: 'btn'

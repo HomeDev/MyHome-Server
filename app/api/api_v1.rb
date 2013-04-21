@@ -25,17 +25,12 @@ class API_v1 < Grape::API
 
   params do
     requires :token, type: String, desc: 'Device token.'
-    requires :values, type: Hash, :desc => 'Values.'
+    requires :address, type: String, :desc => 'User address.'
   end
   post :update do
     authenticate!
-    params.as_json
-  end
-
-  resource :system do
-    desc 'Returns pong.'
-    get :ping do
-      { :ping => 'pong'}
-    end
+    address = Address.where(address: params[:address]).first || Address.create!(address: params[:address])
+    @current_user.address_id = address.id unless address.nil?
+    { status: @current_user.save }
   end
 end
