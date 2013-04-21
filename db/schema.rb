@@ -11,15 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130420072750) do
+ActiveRecord::Schema.define(:version => 20130421070237) do
+
+  create_table "addresses", :force => true do |t|
+    t.string   "address"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "devices", :force => true do |t|
     t.string   "token",                         :null => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
     t.boolean  "subscribe",  :default => false
+    t.integer  "address_id"
   end
 
+  add_index "devices", ["address_id"], :name => "index_devices_on_address_id"
   add_index "devices", ["subscribe"], :name => "index_devices_on_subscribe"
   add_index "devices", ["token"], :name => "index_devices_on_token", :unique => true
 
