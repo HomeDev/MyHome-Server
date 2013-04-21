@@ -8,5 +8,5 @@
   - @devices.each do |device|
     %tr
       %td= device.token
-      %td= device.address.address
+      %td= device.address.address unless device.address.nil?
       %td= Russian::strftime(device.created_at, "%d %B, %Y")

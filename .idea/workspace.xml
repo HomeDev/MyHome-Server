@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8727c481-caaa-42d2-9f8c-e62888c6f636" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/chosen-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/chosen-sprite@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130421071224_add_device_id_to_addresses.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130421072117_remove_device_id_from_addresses.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/address.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/addresses_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/chosen.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/addresses/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/api_v1.rb" afterPath="$PROJECT_DIR$/app/api/api_v1.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/device.rb" afterPath="$PROJECT_DIR$/app/models/device.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
+    <list default="true" id="8727c481-caaa-42d2-9f8c-e62888c6f636" name="Default" comment="add target notification">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/index.haml" afterPath="$PROJECT_DIR$/app/views/devices/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhouse.iml" afterPath="$PROJECT_DIR$/myhouse.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myhouse.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366528868683" ignored="false" />
+    <file path="/Dummy.txt" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366532728488" ignored="false" />
     <file path="/device.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366528819252" ignored="false" />
     <file path="/20130416112144_create_devices.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366117990294" ignored="false" />
     <file path="/routes.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366530412311" ignored="false" />
@@ -46,7 +27,7 @@
     <file path="/address.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366528828988" ignored="false" />
     <file path="/20130421071224_add_device_id_to_addresses.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366528388958" ignored="false" />
     <file path="/20130421072117_remove_device_id_from_addresses.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366528991118" ignored="false" />
-    <file path="/index.haml" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366532645269" ignored="false" />
+    <file path="/index.haml" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366533018358" ignored="false" />
     <file path="/addresses_controller.rb" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366532542822" ignored="false" />
     <file path="/application.html.haml" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366530160579" ignored="false" />
     <file path="/home.js.coffee" changelist="8727c481-caaa-42d2-9f8c-e62888c6f636" time="1366530778711" ignored="false" />
@@ -121,10 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/addresses/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="151" selection-start="470" selection-end="470" vertical-scroll-proportion="0.37220845">
+            <state line="14" column="48" selection-start="557" selection-end="557" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devices/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="60" selection-start="222" selection-end="222" vertical-scroll-proportion="0.36057693">
               <folding />
             </state>
           </provider>
@@ -158,7 +148,6 @@
         <option value="$PROJECT_DIR$/app/models/address.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130421072117_remove_device_id_from_addresses.rb" />
         <option value="$PROJECT_DIR$/app/api/api_v1.rb" />
-        <option value="$PROJECT_DIR$/app/views/devices/index.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
@@ -168,6 +157,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/controllers/addresses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/addresses/index.haml" />
+        <option value="$PROJECT_DIR$/app/views/devices/index.haml" />
       </list>
     </option>
   </component>
@@ -1064,7 +1054,11 @@
       <created>1366528049344</created>
       <updated>1366528049344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add target notification">
+      <created>1366532718018</created>
+      <updated>1366532718018</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1141,7 +1135,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add target notification" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1157,6 +1151,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="add migration" />
     <MESSAGE value="update gitignore" />
+    <MESSAGE value="add target notification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1165,13 +1160,6 @@
     <entry file="file://$PROJECT_DIR$/app/api/api_v1.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="12" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devices/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="60" selection-start="16" selection-end="256" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
@@ -1271,7 +1259,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/addresses/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="151" selection-start="470" selection-end="470" vertical-scroll-proportion="0.37220845">
+        <state line="14" column="48" selection-start="557" selection-end="557" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devices/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="60" selection-start="222" selection-end="222" vertical-scroll-proportion="0.36057693">
           <folding />
         </state>
       </provider>
